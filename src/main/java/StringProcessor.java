@@ -31,14 +31,14 @@ public class StringProcessor {
     }
 
     public static String replace123(String str) {
-        return str.replace("1", "один").replace("2", "два").replace("3", "три").toString();
+        String str2 = str;
+return str2.replace("1","один").replace("2","два").replace("3","три");
     }
 
-    public static StringBuilder deleteEvenChars(StringBuilder str) {
-        for (int i = 0; i <= str.length/2 + 1; i++) {
+    public static void StringBuilder deleteEvenChars(StringBuilder str) {
+       for(int i=1; i < str.length/2; i++) {
             str.deleteCharAt(i);
         }
-        return str;
     }
 }
 
