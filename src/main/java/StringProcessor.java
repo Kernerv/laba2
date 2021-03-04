@@ -31,12 +31,11 @@ public class StringProcessor {
     }
 
     public static String replace123(String str) {
-        return str.replace("1", "один").replace("2", "два").replace("3", "три");
+        return str.replace("1", "один").replace("2", "два").replace("3", "три").toString();
     }
 
     public static StringBuilder deleteEvenChars(StringBuilder str) {
-        int len = (int) Math.round(str.length() / 2.);
-        for (int i = 0; i < len; i++) {
+        for (int i = 0; i <= str.length/2 + 1; i++) {
             str.deleteCharAt(i);
         }
         return str;
